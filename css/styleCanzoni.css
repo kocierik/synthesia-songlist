@@ -1,0 +1,102 @@
+body {
+    background-color: #011c25;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Nunito', sans-serif;
+    color: whitesmoke;
+}
+
+
+
+.header {
+    display: flex;
+    background-color: #082129;
+    border-radius: 5px;
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+
+    text-align: center;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.container {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(#011c25, #12313c);
+}
+
+.content {
+    display: flex;
+    flex: 1 1 80%;
+    background-image: linear-gradient(#011c25, #12313c);
+    margin: 8px 5px 0px 5px;
+    border-radius: 8px;
+    flex-direction: column;
+    padding: 0.7rem 0px 0px 0.7rem;
+}
+
+.song__text {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    line-height: 15px;
+    padding-left: 5.5rem;
+}
+
+.song {
+    display: flex;
+
+
+}
+
+.video {
+    border-radius: 1rem;
+    justify-content: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.song__video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.footer {
+    flex: 0 0 auto;
+    height: 55px;
+    width: 100%;
+
+}
+
+.footer__image {
+    border: 0;
+    height: 55px;
+    background-image: url(type_5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+hr.type_5 {
+
+    border: 0;
+    height: 55px;
+    background-image: url("type_5.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
