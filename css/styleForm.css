@@ -1,0 +1,135 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Nunito", sans-serif;
+  color: whitesmoke;
+  background: #12313c;
+  
+}
+.page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  border-radius: 5px;
+  height: 75px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  background: #011c25;
+}
+
+.title {
+  flex: 0 0 auto;
+  text-align: center;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.container {
+  flex: 1 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-image: linear-gradient(#011c25, #12313c);
+  align-items: center;
+  justify-content: center;
+}
+.content1 {
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  box-shadow: 10px 10px 5px #011c25;
+  margin: 16px;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="container"] {
+    flex-direction: column;
+  }
+}
+.content2 {
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  box-shadow: 10px 10px 5px #011c25;
+}
+.row {
+  display: flex;
+  flex: 0 0 auto;
+  padding: 8px;
+  justify-content: center;
+}
+.rowtitle {
+  flex: 0 0 auto;
+  justify-content: center;
+  text-align: center;
+}
+.row__label {
+  padding: 8px;
+  flex: 0 1 33%;
+}
+.row__input {
+  flex: 0 0 67%;
+  display: flex;
+  width: 100%;
+  padding: 8px;
+  justify-content: center;
+}
+.submit {
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.submit:hover {
+  background: #12313c;
+  font-weight: 700;
+}
+.select {
+  width: 100%;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #fff;
+  height: 70px;
+  width: 100%;
+}
+.footer__line {
+  flex: 0 0 auto;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: #12313c;
+  flex-direction: column;
+}
+
+.footer__image {
+  border: 0;
+  height: 100%;
+  background-image: url(type_5.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  flex: 0 0 auto;
+}
