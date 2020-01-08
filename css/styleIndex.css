@@ -31,10 +31,11 @@ body {
 }
 .login {
   flex: 0 1 10%;
-  padding: 8px;
+  padding-left: 8px;
 }
 .signin {
   flex: 0 1 5%;
+  padding-left: 8px;
 }
 
 .addclick {
@@ -48,16 +49,19 @@ body {
   border-radius: 4px;
   cursor: pointer;
   border: 1px solid #fff;
+  font-style: oblique;
 }
 .addclick:hover {
-  background: #011c25;
+  background: #12313c;
   font-weight: 500;
   border: 1px solid #fff;
   color: white;
 }
-
+.page {
+  height: 100vh;
+}
 .container {
-  height: 75vh;
+  height: 76vh;
   display: flex;
   margin: auto;
   justify-content: center;
@@ -115,7 +119,6 @@ body {
 }
 
 .footer {
-  display: flex;
   flex: 0 0 auto;
   flex-direction: column;
   border-top: 1px solid #fff;
@@ -152,7 +155,7 @@ body {
   position: absolute;
   left: -15px;
   top: 25px;
-  z-index: 10;
+  z-index: 1;
   border-radius: 8px;
 }
 
@@ -196,10 +199,14 @@ body {
   height: 98%;
   top: -5px;
   left: -15px;
-  z-index: 2;
+  z-index: 1;
 }
 
 .overlay {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -215,13 +222,14 @@ body {
   opacity: 1;
 }
 .popup {
-  margin: 150px auto;
   padding: 20px;
   background: #011c25;
   border-radius: 5px;
-  width: 30%;
-  position: relative;
+  position: fixed;
+  display: flex;
+  flex: 0 0 auto;
   transition: all 1s ease-in-out;
+  z-index: 5;
 }
 
 .popup .close {
@@ -275,4 +283,34 @@ body {
 .submit:hover {
   background: #12313c;
   font-weight: 700;
+}
+
+@media only screen and (max-width: 1000px) {
+  .sidebar {
+    font-size: 12px;
+  }
+
+  .piano__keys {
+    position: relative;
+    margin: 0;
+  }
+
+  .piano__keysBlack {
+    width: 45px;
+    height: 20px;
+  }
+
+  .piano {
+    width: 300px;
+    height: 440px;
+  }
+
+  .piano__stecca {
+    width: 15px;
+  }
+  .content__video {
+    flex: 0 0 40%;
+    justify-content: center;
+    align-items: center;
+  }
 }
