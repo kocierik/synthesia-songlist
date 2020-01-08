@@ -13,6 +13,12 @@ $query_random_youtube = "SELECT youtube FROM Songs ORDER BY RAND() LIMIT 1";
 $result_random_youtube = $conn->query($query_random_youtube);
 $result_row = $result_random_youtube->fetch_array();
 $random_id_youtube = $result_row["youtube"];
+include('./php/session.php');
+if (isset($_SESSION['login_user'])) {
+  header("Location: canzoni.php");
+}
+
+
 
 ?>
 <!DOCTYPE html>
